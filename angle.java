@@ -4,7 +4,7 @@ package SGP_HybridCalc;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class angle {
+public class Angle {
 
 
     void Angle()
