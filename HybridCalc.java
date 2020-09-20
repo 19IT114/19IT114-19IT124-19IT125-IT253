@@ -1,12 +1,13 @@
 package SGP_HybridCalc;
 
-import java.awt.font.TextHitInfo;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 
 public class HybridCalc {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         int repeatchoice = 1;
         HybridCalc hc = new HybridCalc();
         Scanner sc = new Scanner(System.in);
@@ -25,6 +26,10 @@ public class HybridCalc {
         System.out.println("8.  Power Calculator.");
         System.out.println("9.  Area Calculator.");
         System.out.println("10. Energy Calculator.");
+        System.out.println("11. Temperature Calculator.");
+        System.out.println("12. Length Calculator.");
+        System.out.println("13. Volume Calculator.");
+        System.out.println("14. Programmers Calculator.");
         System.out.println("********************************************");
         System.out.print("Your choice : ");
         int choice = sc.nextInt();
@@ -43,7 +48,7 @@ public class HybridCalc {
                     break;
                 }
                 case 3: {
-                    angle a = new angle();
+                    Angle a = new Angle();
                     a.Angle();
                     break;
                 }
@@ -86,6 +91,31 @@ public class HybridCalc {
                     e.Energy();
                     break;
                 }
+                case 11:
+                {
+                    Temperature t = new Temperature();
+                    t.Temperature();
+                    break;
+                }
+                case 12:
+                {
+                    Length l = new Length();
+                    l.Length();
+                    break;
+                }
+                case 13:
+                {
+                    Volume v = new Volume();
+                    v.Volume();
+                    break;
+                }
+                case 14:
+                {
+                    Program p = new Program();
+                    p.Program();
+                    break;
+                }
+
                 default: {
                     System.out.println("Please enter a valid choice..!!.");
                     break;
